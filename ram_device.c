@@ -40,9 +40,11 @@ void ramdevice_cleanup(void) {
 
 void ramdevice_write(sector_t sector_off, u8 *buffer, unsigned int sectors) {
 	crypto_cipher_encrypt_one(tfm, buffer, buffer);
+	printk("Write - Size: %d, Offset: %llu\n", sectors * RB_SECTOR_SIZE, sector_off);
 	memcpy(dev_data + sector_off * RB_SECTOR_SIZE, buffer, sectors * RB_SECTOR_SIZE);
 }
 void ramdevice_read(sector_t sector_off, u8 *buffer, unsigned int sectors) {
 	crypto_cipher_decrypt_one(tfm, buffer, buffer);
+	printk("Read - Size: %d, Offset: %llu\n", sectors * RB_SECTOR_SIZE, sector_off);
 	memcpy(buffer, dev_data + sector_off * RB_SECTOR_SIZE, sectors * RB_SECTOR_SIZE);
 }
