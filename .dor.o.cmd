@@ -1,0 +1,1 @@
+cmd_/home/tim/workspace/css422-homework4/dor.o := ld -m elf_i386   -r -o /home/tim/workspace/css422-homework4/dor.o /home/tim/workspace/css422-homework4/ram_block.o /home/tim/workspace/css422-homework4/ram_device.o /home/tim/workspace/css422-homework4/partition.o 
