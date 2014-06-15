@@ -6,7 +6,7 @@
 #include "ram_device.h"
 #include "partition.h"
 
-#define RB_DEVICE_SIZE 1024 /* sectors */
+#define RB_DEVICE_SIZE 40960 /* sectors */
 /* So, total device size = 1024 * 512 bytes = 512 KiB */
 
 /* Array where the disk stores its data */
