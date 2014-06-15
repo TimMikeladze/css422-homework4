@@ -1,8 +1,8 @@
 # If called directly from the command line, invoke the kernel build system.
 ifeq ($(KERNELRELEASE),)
 
-#	KERNEL_SOURCE := /lib/modules/$(shell uname -r)/build
-	KERNEL_SOURCE := /lib/modules/3.14.6-1-ARCH/build
+	KERNEL_SOURCE := /lib/modules/$(shell uname -r)/build
+#	KERNEL_SOURCE := /lib/modules/3.14.6-1-ARCH/build
 	PWD := $(shell pwd)
 default: module
 
