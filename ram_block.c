@@ -59,6 +59,7 @@ static int rb_transfer(struct request *req)
 	unsigned int sector_cnt = blk_rq_sectors(req);
 
 	struct bio_vec *bv;
+	struct bio_vec bvs;
 	struct req_iterator iter;
 
 	sector_t sector_offset;
@@ -70,8 +71,9 @@ static int rb_transfer(struct request *req)
 	//printk(KERN_DEBUG "rb: Dir:%d; Sec:%lld; Cnt:%d\n", dir, start_sector, sector_cnt);
 
 	sector_offset = 0;
-	rq_for_each_segment(bv, req, iter)
+	rq_for_each_segment(bvs, req, iter)
 	{
+		bv = &bvs;
 		buffer = page_address(bv->bv_page) + bv->bv_offset;
 		if (bv->bv_len % RB_SECTOR_SIZE != 0)
 		{
