@@ -297,6 +297,221 @@ deps_/home/tim/workspace/css422-homework4/ram_device.o := \
     $(wildcard include/config/inline/read/unlock/irqrestore.h) \
     $(wildcard include/config/inline/write/unlock/irqrestore.h) \
   include/linux/rbtree.h \
+  include/linux/crypto.h \
+  include/linux/slab.h \
+    $(wildcard include/config/slab/debug.h) \
+    $(wildcard include/config/debug/objects.h) \
+    $(wildcard include/config/failslab.h) \
+    $(wildcard include/config/slob.h) \
+    $(wildcard include/config/slab.h) \
+    $(wildcard include/config/slub.h) \
+    $(wildcard include/config/zone/dma.h) \
+    $(wildcard include/config/numa.h) \
+    $(wildcard include/config/debug/slab.h) \
+  include/linux/gfp.h \
+    $(wildcard include/config/zone/dma32.h) \
+    $(wildcard include/config/pm/sleep.h) \
+    $(wildcard include/config/cma.h) \
+  include/linux/mmdebug.h \
+    $(wildcard include/config/debug/vm.h) \
+  include/linux/mmzone.h \
+    $(wildcard include/config/force/max/zoneorder.h) \
+    $(wildcard include/config/memory/isolation.h) \
+    $(wildcard include/config/memcg.h) \
+    $(wildcard include/config/compaction.h) \
+    $(wildcard include/config/memory/hotplug.h) \
+    $(wildcard include/config/have/memblock/node/map.h) \
+    $(wildcard include/config/flat/node/mem/map.h) \
+    $(wildcard include/config/no/bootmem.h) \
+    $(wildcard include/config/numa/balancing.h) \
+    $(wildcard include/config/have/memory/present.h) \
+    $(wildcard include/config/have/memoryless/nodes.h) \
+    $(wildcard include/config/need/node/memmap/size.h) \
+    $(wildcard include/config/need/multiple/nodes.h) \
+    $(wildcard include/config/have/arch/early/pfn/to/nid.h) \
+    $(wildcard include/config/sparsemem/extreme.h) \
+    $(wildcard include/config/have/arch/pfn/valid.h) \
+    $(wildcard include/config/nodes/span/other/nodes.h) \
+    $(wildcard include/config/holes/in/zone.h) \
+    $(wildcard include/config/arch/has/holes/memorymodel.h) \
+  include/linux/wait.h \
+  include/uapi/linux/wait.h \
+  include/linux/numa.h \
+    $(wildcard include/config/nodes/shift.h) \
+  include/linux/seqlock.h \
+  include/linux/nodemask.h \
+    $(wildcard include/config/movable/node.h) \
+  include/linux/pageblock-flags.h \
+    $(wildcard include/config/hugetlb/page.h) \
+    $(wildcard include/config/hugetlb/page/size/variable.h) \
+  include/linux/page-flags-layout.h \
+  include/generated/bounds.h \
+  include/linux/memory_hotplug.h \
+    $(wildcard include/config/memory/hotremove.h) \
+    $(wildcard include/config/have/arch/nodedata/extension.h) \
+    $(wildcard include/config/have/bootmem/info/node.h) \
+  include/linux/notifier.h \
+  include/linux/errno.h \
+  include/uapi/linux/errno.h \
+  include/linux/mutex.h \
+    $(wildcard include/config/debug/mutexes.h) \
+    $(wildcard include/config/mutex/spin/on/owner.h) \
+  include/linux/rwsem.h \
+    $(wildcard include/config/rwsem/generic/spinlock.h) \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/rwsem.h \
+  include/linux/srcu.h \
+  include/linux/rcupdate.h \
+    $(wildcard include/config/rcu/torture/test.h) \
+    $(wildcard include/config/tree/rcu.h) \
+    $(wildcard include/config/tree/preempt/rcu.h) \
+    $(wildcard include/config/rcu/trace.h) \
+    $(wildcard include/config/preempt/rcu.h) \
+    $(wildcard include/config/rcu/user/qs.h) \
+    $(wildcard include/config/tiny/rcu.h) \
+    $(wildcard include/config/debug/objects/rcu/head.h) \
+    $(wildcard include/config/rcu/nocb/cpu.h) \
+    $(wildcard include/config/no/hz/full/sysidle.h) \
+  include/linux/completion.h \
+  include/linux/debugobjects.h \
+    $(wildcard include/config/debug/objects/free.h) \
+  include/linux/rcutree.h \
+  include/linux/workqueue.h \
+    $(wildcard include/config/debug/objects/work.h) \
+    $(wildcard include/config/freezer.h) \
+    $(wildcard include/config/sysfs.h) \
+  include/linux/timer.h \
+    $(wildcard include/config/timer/stats.h) \
+    $(wildcard include/config/debug/objects/timers.h) \
+  include/linux/ktime.h \
+    $(wildcard include/config/ktime/scalar.h) \
+  include/linux/time.h \
+    $(wildcard include/config/arch/uses/gettimeoffset.h) \
+  include/uapi/linux/time.h \
+  include/linux/jiffies.h \
+  include/linux/timex.h \
+  include/uapi/linux/timex.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/include/uapi/linux/param.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/uapi/asm/param.h \
+  include/asm-generic/param.h \
+    $(wildcard include/config/hz.h) \
+  include/uapi/asm-generic/param.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/timex.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/tsc.h \
+    $(wildcard include/config/x86/tsc.h) \
+  include/linux/topology.h \
+    $(wildcard include/config/sched/smt.h) \
+    $(wildcard include/config/sched/mc.h) \
+    $(wildcard include/config/sched/book.h) \
+    $(wildcard include/config/use/percpu/numa/node/id.h) \
+  include/linux/smp.h \
+  include/linux/llist.h \
+    $(wildcard include/config/arch/have/nmi/safe/cmpxchg.h) \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/smp.h \
+    $(wildcard include/config/x86/io/apic.h) \
+    $(wildcard include/config/x86/32/smp.h) \
+    $(wildcard include/config/debug/nmi/selftest.h) \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/mpspec.h \
+    $(wildcard include/config/x86/numaq.h) \
+    $(wildcard include/config/eisa.h) \
+    $(wildcard include/config/x86/mpparse.h) \
+    $(wildcard include/config/acpi.h) \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/mpspec_def.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/x86_init.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/uapi/asm/bootparam.h \
+  include/linux/screen_info.h \
+  include/uapi/linux/screen_info.h \
+  include/linux/apm_bios.h \
+  include/uapi/linux/apm_bios.h \
+  include/linux/edd.h \
+  include/uapi/linux/edd.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/e820.h \
+    $(wildcard include/config/efi.h) \
+    $(wildcard include/config/hibernation.h) \
+    $(wildcard include/config/memtest.h) \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/uapi/asm/e820.h \
+    $(wildcard include/config/intel/txt.h) \
+  include/linux/ioport.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/ist.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/uapi/asm/ist.h \
+  include/video/edid.h \
+    $(wildcard include/config/x86.h) \
+  include/uapi/video/edid.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/apicdef.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/apic.h \
+    $(wildcard include/config/x86/x2apic.h) \
+  include/linux/pm.h \
+    $(wildcard include/config/vt/console/sleep.h) \
+    $(wildcard include/config/pm.h) \
+    $(wildcard include/config/pm/runtime.h) \
+    $(wildcard include/config/pm/clk.h) \
+    $(wildcard include/config/pm/generic/domains.h) \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/fixmap.h \
+    $(wildcard include/config/paravirt/clock.h) \
+    $(wildcard include/config/provide/ohci1394/dma/init.h) \
+    $(wildcard include/config/x86/visws/apic.h) \
+    $(wildcard include/config/pci/mmconfig.h) \
+    $(wildcard include/config/x86/intel/mid.h) \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/acpi.h \
+    $(wildcard include/config/acpi/numa.h) \
+  include/acpi/pdc_intel.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/numa.h \
+    $(wildcard include/config/numa/emu.h) \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/topology.h \
+    $(wildcard include/config/x86/ht.h) \
+  include/asm-generic/topology.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/numa_32.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/mmu.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/realmode.h \
+    $(wildcard include/config/acpi/sleep.h) \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/io.h \
+    $(wildcard include/config/mtrr.h) \
+  include/asm-generic/iomap.h \
+    $(wildcard include/config/has/ioport.h) \
+    $(wildcard include/config/pci.h) \
+    $(wildcard include/config/generic/iomap.h) \
+  include/asm-generic/pci_iomap.h \
+    $(wildcard include/config/no/generic/pci/ioport/map.h) \
+    $(wildcard include/config/generic/pci/iomap.h) \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/pvclock.h \
+  include/linux/clocksource.h \
+    $(wildcard include/config/arch/clocksource/data.h) \
+    $(wildcard include/config/clocksource/watchdog.h) \
+    $(wildcard include/config/clksrc/of.h) \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/pvclock-abi.h \
+  include/asm-generic/fixmap.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/idle.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/io_apic.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/irq_vectors.h \
+    $(wildcard include/config/have/kvm.h) \
+  include/linux/percpu.h \
+    $(wildcard include/config/need/per/cpu/embed/first/chunk.h) \
+    $(wildcard include/config/need/per/cpu/page/first/chunk.h) \
+  include/linux/pfn.h \
+  include/linux/kmemleak.h \
+    $(wildcard include/config/debug/kmemleak.h) \
+  include/linux/slub_def.h \
+    $(wildcard include/config/slub/stats.h) \
+    $(wildcard include/config/memcg/kmem.h) \
+  include/linux/kobject.h \
+    $(wildcard include/config/debug/kobject/release.h) \
+  include/linux/sysfs.h \
+  include/linux/kernfs.h \
+  include/linux/idr.h \
+  include/linux/kobject_ns.h \
+  include/linux/stat.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/uapi/asm/stat.h \
+  include/uapi/linux/stat.h \
+  include/linux/uidgid.h \
+    $(wildcard include/config/user/ns.h) \
+  include/linux/highuid.h \
+  include/linux/kref.h \
+  include/linux/uaccess.h \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/uaccess.h \
+    $(wildcard include/config/x86/intel/usercopy.h) \
+    $(wildcard include/config/debug/strict/user/copy/checks.h) \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/smap.h \
+    $(wildcard include/config/x86/smap.h) \
+  /usr/lib/modules/3.14.6-1-ARCH/build/arch/x86/include/asm/uaccess_32.h \
   /home/tim/workspace/css422-homework4/ram_device.h \
   /home/tim/workspace/css422-homework4/partition.h \
 

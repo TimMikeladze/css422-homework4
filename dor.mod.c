@@ -19,6 +19,7 @@ __used
 __attribute__((section("__versions"))) = {
 	{ 0xdd9c16b9, __VMLINUX_SYMBOL_STR(module_layout) },
 	{ 0x4318935a, __VMLINUX_SYMBOL_STR(blk_init_queue) },
+	{ 0xee002b82, __VMLINUX_SYMBOL_STR(kmalloc_caches) },
 	{ 0x3ea5b44f, __VMLINUX_SYMBOL_STR(alloc_disk) },
 	{ 0x5c3a3484, __VMLINUX_SYMBOL_STR(blk_cleanup_queue) },
 	{ 0xd6ee688f, __VMLINUX_SYMBOL_STR(vmalloc) },
@@ -33,9 +34,11 @@ __attribute__((section("__versions"))) = {
 	{ 0x89be7a86, __VMLINUX_SYMBOL_STR(put_disk) },
 	{ 0xf8c6cd9a, __VMLINUX_SYMBOL_STR(blk_fetch_request) },
 	{ 0x90ad6f84, __VMLINUX_SYMBOL_STR(__blk_end_request_all) },
+	{ 0xc978737, __VMLINUX_SYMBOL_STR(kmem_cache_alloc_trace) },
 	{ 0x1e047854, __VMLINUX_SYMBOL_STR(warn_slowpath_fmt) },
 	{ 0x2e60bace, __VMLINUX_SYMBOL_STR(memcpy) },
 	{ 0x3140cee1, __VMLINUX_SYMBOL_STR(add_disk) },
+	{ 0x426284f6, __VMLINUX_SYMBOL_STR(crypto_alloc_base) },
 };
 
 static const char __module_depends[]
